@@ -38,7 +38,19 @@
 			"css": [
 				"css/block-weibo.css"
 			],
-			"js": []
+			"js": [
+				"scripts/block-weibo.js"
+			]
+		}, {
+			"matches": [
+				"*://zhihu.com/*"
+			],
+			"css": [
+				"css/block-zhihu.css"
+			],
+			"js": [
+				"scripts/block-zhihu.js"
+			]
 		}
 	],
 	"options_page": "options.html",
