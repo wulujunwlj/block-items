@@ -1,0 +1,51 @@
+{
+	"manifest_version": 2,
+	"name": "block-items",
+	"version": "0.1.0",
+	// "default_locale": "en", 
+	"description": "屏蔽你不想看到的东西",
+	"icons": {
+		"16": "img/icon/icon_16.png",
+		"48": "img/icon/icon_48.png",
+		"128": "img/icon/icon_128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "img/icon/icon_19.png",
+			"38": "img/icon/icon_38.png"
+		},
+		"default_title": "My Own Functions List",
+		"default_popup": "popup.html"
+	},
+	// "page_action": {
+	// 	"default_icons": {
+	// 		"19": "img/icon/icon_19.png",
+	// 		"38": "img/icon/icon_38.png"
+	// 	}, 
+	// 	"default_title": "My Own Functions List",
+	// 	"default_popup": "popup.html"
+	// },
+	// "background": {
+	// 	"scripts": ["background.js"]
+	// },
+	"content_scripts": [
+		{
+			"matches": [
+				"*://weibo.com/*",
+				"*://www.weibo.com/*",
+				"*://*/*"
+			],
+			"css": [
+				"css/block-weibo.css"
+			],
+			"js": []
+		}
+	],
+	"options_page": "options.html",
+	"permissions": [
+		"*://*/*"
+	],
+	"web_accessible_resources": [
+		"images/*.png"
+	]
+}

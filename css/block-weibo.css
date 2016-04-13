@@ -1,0 +1,17 @@
+/**
+ * styles for block weibo ads
+ */
+.send_weibo .key {
+	display: none;
+}
+
+#v6_pl_rightmod_rank,
+#v6_pl_rightmod_recominfo,
+#v6_pl_rightmod_attfeed,
+#v6_pl_rightmod_noticeboard,
+#v6_pl_rightmod_ads36,
+#v6_pl_rightmod_bigday,
+#v6_pl_ad_forfqy,
+#v6_trustPagelet_recom_member {
+	display: none;
+}
